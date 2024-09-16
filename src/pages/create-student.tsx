@@ -1,11 +1,10 @@
-import { TbInfoSquareRounded, TbPhotoPlus } from "react-icons/tb"
-import { Link } from "react-router-dom"
+import { TbInfoSquareRounded, TbPhotoPlus } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 const CreateStudent = () => {
   return (
     <div className="page-wrapper">
       <div className="content content-two">
-
         <div className="d-md-flex d-block align-items-center justify-content-between mb-3">
           <div className="my-auto mb-2">
             <h3 className="mb-1">Add Student</h3>
@@ -23,9 +22,9 @@ const CreateStudent = () => {
           </div>
         </div>
 
-        <div className="row" >
-          <div className="col-md-12" >
-            <form >
+        <div className="row">
+          <div className="col-md-12">
+            <form>
               <div className="card">
                 <div className="card-header bg-light">
                   <div className="d-flex align-items-center">
@@ -36,7 +35,6 @@ const CreateStudent = () => {
                   </div>
                 </div>
                 <div className="card-body pb-1">
-
                   <div className="row">
                     <div className="col-md-12">
                       <div className="d-flex align-items-center flex-wrap row-gap-3 mb-3">
@@ -47,11 +45,18 @@ const CreateStudent = () => {
                           <div className="profile-uploader d-flex align-items-center">
                             <div className="drag-upload-btn mb-3">
                               Upload
-                              <input type="file" className="form-control image-sign" />
+                              <input
+                                type="file"
+                                className="form-control image-sign"
+                              />
                             </div>
-                            <Link to="#" className="btn btn-primary mb-3">Remove</Link>
+                            <Link to="#" className="btn btn-primary mb-3">
+                              Remove
+                            </Link>
                           </div>
-                          <p className="fs-12">Upload image size 4MB, Format JPG, PNG, SVG</p>
+                          <p className="fs-12">
+                            Upload image size 4MB, Format JPG, PNG, SVG
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -70,8 +75,12 @@ const CreateStudent = () => {
                       <div className="mb-3">
                         <label className="form-label">Admission Date</label>
                         <div className="date-pic">
-                          <input required type="date" min={`${new Date().toISOString().split('T')[0]}`} className="form-control date-input datetimepicker" />
-
+                          <input
+                            required
+                            type="date"
+                            min={`${new Date().toISOString().split("T")[0]}`}
+                            className="form-control date-input datetimepicker"
+                          />
                         </div>
                       </div>
                     </div>
@@ -87,24 +96,38 @@ const CreateStudent = () => {
                     <div className="col-xxl col-xl-3 col-md-6">
                       <div className="mb-3">
                         <label className="form-label">First Name</label>
-                        <input type="text" name="firsName" className="form-control" />
+                        <input
+                          type="text"
+                          name="firsName"
+                          className="form-control"
+                        />
                       </div>
                     </div>
                     {/* lastnaem */}
                     <div className="col-xxl col-xl-3 col-md-6">
                       <div className="mb-3">
                         <label className="form-label">Last Name</label>
-                        <input type="text" name="lastName" className="form-control" />
+                        <input
+                          type="text"
+                          name="lastName"
+                          className="form-control"
+                        />
                       </div>
                     </div>
                     {/* Class */}
                     <div className="col-xxl col-xl-3 col-md-6">
                       <div className="mb-3">
-                        <div className="col-md-4" >
-                          <div className="mb-3" >
+                        <div className="col-md-4">
+                          <div className="mb-3">
                             <label className="form-label">Class</label>
-                            <select defaultValue={""} required className=" w-[150px] flex flex-col gap-2 bg-transparent border rounded-md p-2"  >
-                              <option disabled value={''}>Select</option>
+                            <select
+                              defaultValue={""}
+                              required
+                              className=" w-[150px] flex flex-col gap-2 bg-transparent border rounded-md p-2"
+                            >
+                              <option disabled value={""}>
+                                Select
+                              </option>
                               <option value="I">I</option>
                               <option value="II">II</option>
                               <option value="III">III</option>
@@ -118,8 +141,14 @@ const CreateStudent = () => {
                     <div className="col-xxl col-xl-3 col-md-6">
                       <div className="mb-3">
                         <label className="form-label">Section</label>
-                        <select defaultValue={""} required className=" w-[150px] flex flex-col gap-2 bg-transparent border rounded-md p-2"  >
-                          <option disabled value={''}>Select</option>
+                        <select
+                          defaultValue={""}
+                          required
+                          className=" w-[150px] flex flex-col gap-2 bg-transparent border rounded-md p-2"
+                        >
+                          <option disabled value={""}>
+                            Select
+                          </option>
                           <option value="a">A</option>
                           <option value="b">B</option>
                           <option value="c">C</option>
@@ -131,8 +160,14 @@ const CreateStudent = () => {
                     <div className="col-xxl col-xl-3 col-md-6">
                       <div className="mb-3">
                         <label className="form-label">Gender</label>
-                        <select defaultValue={""} required className=" w-[150px] flex flex-col gap-2 bg-transparent border rounded-md p-2"  >
-                          <option disabled value={''}>Select</option>
+                        <select
+                          defaultValue={""}
+                          required
+                          className=" w-[150px] flex flex-col gap-2 bg-transparent border rounded-md p-2"
+                        >
+                          <option disabled value={""}>
+                            Select
+                          </option>
                           <option value="male">Male</option>
                           <option value="female">Female</option>
                         </select>
@@ -143,15 +178,21 @@ const CreateStudent = () => {
                       <div className="mb-3">
                         <label className="form-label">Date of Birth</label>
                         <div className="date-pic">
-                          <input required type="date" max={`${new Date().toISOString().split('T')[0]}`} className="form-control date-input datetimepicker" />
-
+                          <input
+                            required
+                            type="date"
+                            max={`${new Date().toISOString().split("T")[0]}`}
+                            className="form-control date-input datetimepicker"
+                          />
                         </div>
                       </div>
                     </div>
                     {/* Phone */}
                     <div className="col-xxl col-xl-3 col-md-6">
                       <div className="mb-3">
-                        <label className="form-label">Primary Contact Number</label>
+                        <label className="form-label">
+                          Primary Contact Number
+                        </label>
                         <input type="tel" className="form-control" />
                       </div>
                     </div>
@@ -166,15 +207,19 @@ const CreateStudent = () => {
                 </div>
               </div>
               <div className="text-end">
-                <button type="reset" className="btn btn-light me-3">Reset</button>
-                <button type="button" className="btn btn-primary">Add Student</button>
+                <button type="reset" className="btn btn-light me-3">
+                  Reset
+                </button>
+                <button type="button" className="btn btn-primary">
+                  Add Student
+                </button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CreateStudent
+export default CreateStudent;
