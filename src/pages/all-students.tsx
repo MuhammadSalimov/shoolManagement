@@ -1,5 +1,6 @@
-import { FaArrowAltCircleDown, FaFilter } from "react-icons/fa";
+import { FaFilter } from "react-icons/fa";
 import { FaRegSquarePlus } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const AllStudents = () => {
   return (
@@ -22,12 +23,12 @@ const AllStudents = () => {
           </div>
           <div className="d-flex my-xl-auto right-content align-items-center flex-wrap">
             <div className="mb-2">
-              <a
-                href="add-student.html"
+              <Link
+                to="/create-student"
                 className="btn btn-primary d-flex align-items-center"
               >
                 <FaRegSquarePlus /> &nbsp; Add Student
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -41,7 +42,7 @@ const AllStudents = () => {
               data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
             >
-              <FaFilter /> &nbsp; Filter 
+              <FaFilter /> &nbsp; Filter
             </a>
             <div className="dropdown-menu drop-width">
               <form action="student-grid.html">
