@@ -1,12 +1,5 @@
-import {
-  FaCalendar,
-  FaFilter,
-  FaList,
-  FaTh,
-  FaSortAlphaDown,
-} from "react-icons/fa";
+import { FaFilter } from "react-icons/fa";
 import { FaRegSquarePlus } from "react-icons/fa6";
-import { TiDocumentText, TiPlus } from "react-icons/ti";
 
 const StudentList = () => {
   return (
