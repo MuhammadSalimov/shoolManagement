@@ -10,7 +10,8 @@ import CreateStaffs from "./pages/create-staffs";
 import CreateInvoice from "./pages/create-invoice";
 import AllStudents from "./pages/all-students";
 import StudentList from "./pages/student-list";
-
+import AllClasses from './pages/classes/all-classes'
+import ClassRoom from "./pages/classes/class-room";
 const App = () => {
   const [role, setRole] = useState("admin");
   useEffect(() => {
@@ -29,6 +30,8 @@ const App = () => {
             <Route path="/create-invoice" element={<CreateInvoice />} />
             <Route path="/all-student" element={<AllStudents />} />
             <Route path="/student-list" element={<StudentList />} />
+            <Route path="/all-classes" element={<AllClasses />} />
+            <Route path="/class-room" element={<ClassRoom />} />
           </Route>
         </Routes>
       </BrowserRouter>

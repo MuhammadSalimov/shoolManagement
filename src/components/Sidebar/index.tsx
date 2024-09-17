@@ -3,7 +3,7 @@ import { BiSolidSchool } from "react-icons/bi";
 import { FaBook, FaChalkboardTeacher, FaTable } from "react-icons/fa";
 import { FiLifeBuoy } from "react-icons/fi";
 import { PiStudent } from "react-icons/pi";
-import { TbBellSchool, TbHexagonalPrism, TbReportMoney } from "react-icons/tb";
+import { TbBellSchool, TbBuilding, TbHexagonalPrism, TbReportMoney } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
 
@@ -63,21 +63,26 @@ const Sidebar = () => {
               <li>
                 <h6 className="submenu-hdr"><span>Academic</span></h6>
                 <ul>
-                  <li className={isMenuOpen('classes') ? 'submenu h-[120px]' : 'submenu h-[40px]'}>
+                  <li className={isMenuOpen('classes') ? 'submenu h-[80px]' : 'submenu h-[40px]'}>
                     <a onClick={() => toggleMenu("classes")} href="#" className={`${isMenuOpen("classes") && "subdrop"}`}>
                       <BiSolidSchool />
                       <span>Classes</span>
                       <span className="menu-arrow"></span></a>
                     <ul className={isMenuOpen("classes") ? "d-block" : ""}>
                       <li><Link to="/all-classes">All Classes</Link></li>
-                      <li><Link to="/schedule">Schedule</Link></li>
                     </ul>
+                  </li>
+                  <li>
+                    <Link to="/class-room"><TbBuilding />
+                      <span>Class Room</span>
+                    </Link>
                   </li>
                   <li>
                     <Link to="/class-rountime"><TbBellSchool />
                       <span>Class Routine</span>
                     </Link>
                   </li>
+
                   <li><Link to="/subject"> <FaBook /> <span>Subject</span></Link></li>
                   <li><Link to="/class-time-table"> <FaTable /> <span>Time
                     Table</span></Link></li>
