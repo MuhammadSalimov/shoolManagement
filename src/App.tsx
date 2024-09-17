@@ -9,6 +9,7 @@ import CreateTeacher from "./pages/create-teacher";
 import CreateStaffs from "./pages/create-staffs";
 import CreateInvoice from "./pages/create-invoice";
 import AllStudents from "./pages/all-students";
+import StudentList from "./pages/student-list";
 
 const App = () => {
   const [role, setRole] = useState("admin");
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="/create-staffs" element={<CreateStaffs />} />
             <Route path="/create-invoice" element={<CreateInvoice />} />
             <Route path="/all-student" element={<AllStudents />} />
+            <Route path="/student-list" element={<StudentList />} />
           </Route>
         </Routes>
       </BrowserRouter>
