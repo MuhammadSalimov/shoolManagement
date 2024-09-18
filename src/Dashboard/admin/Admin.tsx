@@ -255,7 +255,7 @@ const Admin = () => {
                     </thead>
                     <tbody>
                       {students.map(item => {
-                        return <tr>
+                        return <tr key={item.admissionNumber}>
                           <td>{item.admissionNumber}</td>
                           <td>
                             <div className="d-flex align-items-center">

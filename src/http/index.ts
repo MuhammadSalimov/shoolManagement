@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const api_url = "http://192.168.0.107:4100/api";
+export const api_url = "https://medieval.uz/api";
 
 const $axios = axios.create({
   withCredentials: true,
