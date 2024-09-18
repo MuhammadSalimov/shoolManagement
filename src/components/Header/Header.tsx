@@ -272,7 +272,7 @@ const Header = () => {
               className="pe-1"
               onClick={() =>
                 setIsDark((prev) => {
-                  localStorage.setItem("isDark", !prev);
+                  localStorage.setItem("isDark", JSON.stringify(!prev));
                   return !prev;
                 })
               }
