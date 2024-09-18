@@ -14,3 +14,13 @@ export interface IStudentMark {
   section: string;
   userId: string;
 }
+
+export interface IUser {
+  fullName: string;
+  id: string;
+  role: string;
+  picture:string,
+  login:string
+}
+
+export type AuthType ="login"

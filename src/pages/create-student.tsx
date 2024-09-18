@@ -26,6 +26,7 @@ const CreateStudent = () => {
           <div className="col-md-12">
             <form>
               <div className="card">
+                {/* Header */}
                 <div className="card-header bg-light">
                   <div className="d-flex align-items-center">
                     <span className="bg-white avatar avatar-sm me-2 text-gray-7 flex-shrink-0">

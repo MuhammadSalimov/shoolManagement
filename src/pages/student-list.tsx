@@ -38,7 +38,7 @@ const StudentList = () => {
             <div className="d-flex align-items-center flex-wrap">
               <div className="dropdown mb-3 me-2">
                 <a
-                  href="javascript:void(0);"
+                  href="#"
                   className="btn btn-outline-light bg-white dropdown-toggle d-flex align-items-center"
                   data-bs-toggle="dropdown"
                   data-bs-auto-close="outside"
@@ -412,7 +412,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -423,7 +423,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -561,7 +561,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -572,7 +572,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -710,7 +710,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -721,7 +721,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -859,7 +859,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -870,7 +870,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -1008,7 +1008,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -1019,7 +1019,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -1157,7 +1157,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -1168,7 +1168,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -1306,7 +1306,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -1317,7 +1317,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -1455,7 +1455,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -1466,7 +1466,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -1604,7 +1604,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -1615,7 +1615,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -1753,7 +1753,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -1764,7 +1764,7 @@ const StudentList = () => {
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable

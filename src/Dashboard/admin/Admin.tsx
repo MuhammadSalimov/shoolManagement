@@ -260,7 +260,7 @@ const Admin = () => {
                           <td>
                             <div className="d-flex align-items-center">
                               <a href="student-details.html" className="avatar avatar-md">
-                                <img src="assets/img/students/student-01.jpg" className="img-fluid rounded-circle" alt="img" />
+                                <img src={item.picture} className="img-fluid rounded-circle" alt="img" />
                               </a>
                               <div className="ms-2">
                                 <p className="text-dark mb-0">

@@ -11,7 +11,7 @@ const TeacherList = () => {
                   <a href="index.html">Dashboard</a>
                 </li>
                 <li className="breadcrumb-item">
-                  <a href="javascript:void(0);">Peoples</a>
+                  <a href="#">Peoples</a>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
                   Teacher List
@@ -37,7 +37,7 @@ const TeacherList = () => {
             <div className="d-flex align-items-center flex-wrap">
               <div className="dropdown mb-3 me-2">
                 <a
-                  href="javascript:void(0);"
+                  href="#"
                   className="btn btn-outline-light bg-white dropdown-toggle"
                   data-bs-toggle="dropdown"
                   data-bs-auto-close="outside"
@@ -490,7 +490,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -501,7 +501,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -603,7 +603,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -614,7 +614,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -716,7 +716,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -727,7 +727,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -829,7 +829,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -840,7 +840,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -942,7 +942,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -953,7 +953,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -1055,7 +1055,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -1066,7 +1066,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -1168,7 +1168,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -1179,7 +1179,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -1281,7 +1281,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -1292,7 +1292,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -1394,7 +1394,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -1405,7 +1405,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
@@ -1507,7 +1507,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                       data-bs-toggle="modal"
                                       data-bs-target="#login_detail"
                                     >
@@ -1518,7 +1518,7 @@ activate to sort column descending"
                                   <li>
                                     <a
                                       className="dropdown-item rounded-1"
-                                      href="javascript:void(0);"
+                                      href="#"
                                     >
                                       <i className="ti ti-toggle-right me-2"></i>
                                       Disable
