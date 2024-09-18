@@ -11,7 +11,9 @@ import CreateInvoice from "./pages/create-invoice";
 import AllStudents from "./pages/all-students";
 import StudentList from "./pages/student-list";
 import TeacherList from "./pages/teachers-list";
-import AllTeachers from "./pages/all-teachers";
+import AllTeachers from "./pages/all.teacher";
+import AllClasses from "./pages/classes/all-classes";
+import ClassRoom from "./pages/classes/class-room";
 const App = () => {
   const [role, setRole] = useState("admin");
   useEffect(() => {
@@ -32,6 +34,8 @@ const App = () => {
             <Route path="/student-list" element={<StudentList />} />
             <Route path="/teacher-list" element={<TeacherList />} />
             <Route path="/all-teachers" element={<AllTeachers />} />
+            <Route path="/all-classes" element={<AllClasses />} />
+            <Route path="/class-room" element={<ClassRoom />} />
           </Route>
         </Routes>
       </BrowserRouter>
