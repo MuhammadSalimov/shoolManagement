@@ -1,4 +1,7 @@
 import EventModal from "@/components/modal/add-event"
+import $axios from "@/http"
+import { StudentStore } from "@/store/student.store"
+import { useQuery } from "@tanstack/react-query"
 import { useState } from "react"
 import { CiSquarePlus } from "react-icons/ci"
 import { FaRegEdit } from "react-icons/fa"
@@ -14,6 +17,19 @@ const Admin = () => {
       setOpenModal(false)
     }
   }
+
+  // get all student --> backend
+  const { setStudent, students } = StudentStore()
+
+  useQuery({
+    queryKey: ['get-student'],
+    queryFn: async () => {
+      const { data } = await $axios.get("/student")
+      setStudent(data)
+      return data
+    }
+  })
+  // =================
   return (
     <div className="content px-2 pt-[100px]" >
 
@@ -172,7 +188,8 @@ const Admin = () => {
           </div>
         </div>
         {/* Student Marks */}
-        <div className="row">
+        <div className="row min-h-[500px]">
+
           <div className="col-xxl-8 col-xl-7 d-flex">
             <div className="card flex-fill">
               <div className="card-header d-flex align-items-center justify-content-between flex-wrap">
@@ -237,107 +254,36 @@ const Admin = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>35013</td>
-                        <td>
-                          <div className="d-flex align-items-center">
-                            <a href="student-details.html" className="avatar avatar-md">
-                              <img src="assets/img/students/student-01.jpg" className="img-fluid rounded-circle" alt="img" />
-                            </a>
-                            <div className="ms-2">
-                              <p className="text-dark mb-0">
-                                <a href="student-details.html">Janet</a></p>
+                      {students.map(item => {
+                        return <tr>
+                          <td>{item.admissionNumber}</td>
+                          <td>
+                            <div className="d-flex align-items-center">
+                              <a href="student-details.html" className="avatar avatar-md">
+                                <img src="assets/img/students/student-01.jpg" className="img-fluid rounded-circle" alt="img" />
+                              </a>
+                              <div className="ms-2">
+                                <p className="text-dark mb-0">
+                                  <a href="student-details.html">{item.firstName}</a></p>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                        <td>III</td>
-                        <td>A</td>
-                        <td>89%</td>
-                        <td>4.2</td>
-                        <td>
-                          <span className="badge bg-success">Pass</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>35013</td>
-                        <td>
-                          <div className="d-flex align-items-center">
-                            <a href="student-details.html" className="avatar avatar-md">
-                              <img src="assets/img/students/student-02.jpg" className="img-fluid rounded-circle" alt="img" />
-                            </a>
-                            <div className="ms-2">
-                              <p className="text-dark mb-0"><a href="staff-details.html">Joann</a></p>
-                            </div>
-                          </div>
-                        </td>
-                        <td>IV</td>
-                        <td>B</td>
-                        <td>88%</td>
-                        <td>3.2</td>
-                        <td>
-                          <span className="badge bg-success">Pass</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>35011</td>
-                        <td>
-                          <div className="d-flex align-items-center">
-                            <a href="student-details.html" className="avatar avatar-md"><img src="assets/img/students/student-03.jpg" className="img-fluid rounded-circle" alt="img" /></a>
-                            <div className="ms-2">
-                              <p className="text-dark mb-0"><a href="student-details.html">Kathleen</a></p>
-                            </div>
-                          </div>
-                        </td>
-                        <td>II</td>
-                        <td>A</td>
-                        <td>69%</td>
-                        <td>4.5</td>
-                        <td>
-                          <span className="badge bg-success">Pass</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>35010</td>
-                        <td>
-                          <div className="d-flex align-items-center">
-                            <a href="student-details.html" className="avatar avatar-md"><img src="assets/img/students/student-04.jpg" className="img-fluid rounded-circle" alt="img" /></a>
-                            <div className="ms-2">
-                              <p className="text-dark mb-0"><a href="student-details.html">Gifford</a></p>
-                            </div>
-                          </div>
-                        </td>
-                        <td>I</td>
-                        <td>B</td>
-                        <td>21%</td>
-                        <td>4.5</td>
-                        <td>
-                          <span className="badge bg-success">Pass</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>35009</td>
-                        <td>
-                          <div className="d-flex align-items-center">
-                            <a href="student-details.html" className="avatar avatar-md"><img src="assets/img/students/student-05.jpg" className="img-fluid rounded-circle" alt="img" /></a>
-                            <div className="ms-2">
-                              <p className="text-dark mb-0"><a href="student-details.html">Lisa</a></p>
-                            </div>
-                          </div>
-                        </td>
-                        <td>II</td>
-                        <td>B</td>
-                        <td>31%</td>
-                        <td>3.9</td>
-                        <td>
-                          <span className="badge bg-danger">Fail</span>
-                        </td>
-                      </tr>
+                          </td>
+                          <td>{item.class}</td>
+                          <td>{item.section}</td>
+                          <td>89%</td>
+                          <td>4.2</td>
+                          <td>
+                            <span className="badge bg-success">Pass</span>
+                          </td>
+                        </tr>
+                      })}
                     </tbody>
                   </table>
                 </div>
               </div>
             </div>
           </div>
+
           <div className="col-xxl-4 col-xl-5 d-flex">
             <div className="card flex-fill">
 
